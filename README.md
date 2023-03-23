@@ -13,6 +13,5 @@
    * 多个useState setN的时候一定要传函数，里面可以拿到旧的state值再去操作，state hook是重写所有的old state value，也就是说直接setN的话所有state hook都会发生re-render
 
 ```jsx
-setCount(prevCount => prevCount +1)
+setCount(prevCount => prevCount + 1)
 ```
-
