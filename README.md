@@ -194,11 +194,7 @@ export default function Demo() {
 }
 ```
 
-
-
-
-
-
+​	
 
 #### useCallback & useMemo
 
@@ -340,5 +336,3 @@ function Child({ callback }) {
     </div>
 }
 ```
-
-​	
