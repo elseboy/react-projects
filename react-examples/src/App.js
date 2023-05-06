@@ -34,11 +34,8 @@ function App() {
         <div>
           <button onClick={api}>get users</button>
         </div>
-
         <SearchBox className="search-box" onChangeHandler={handleInput} />
-
         <br />
-
         <CardList users={filteredUsers} />
       </header>
     </div>
