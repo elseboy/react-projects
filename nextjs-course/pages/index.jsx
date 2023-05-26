@@ -1,16 +1,14 @@
-import Link from 'next/link';
+import { getFeaturedEvents } from '../data.js';
+import EventList from '../components/events/event-list.jsx';
 
-const Index = () => {
+const HomePage = () => {
+  const featuredEvents = getFeaturedEvents();
+
   return (
     <div>
-      <h1>Index Page</h1>
-
-      <ul>
-        <li>
-          <Link href="/about">about</Link>
-        </li>
-      </ul>
+      <EventList items={featuredEvents} />
     </div>
   );
 };
-export default Index;
+
+export default HomePage;
